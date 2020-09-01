@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Mazas ex4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="includes/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-gradient">
+        Penarol Form
+    </nav>
+    <main>
+        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+            <div class="wrap">
+                <div class="cube">
+                    <div class="front">
+                        <label>FullName
+                            <input type="text" class="form-control col-md-9" name="fullName" required>
+                        </label>
+                        <label>Password
+                            <input type="password" class="form-control col-md-9" name="pass">
+                        </label>
+                    </div>
+                <div class="right">
+                    <label>Email
+                        <input type="email" class="form-control col-md-9" name="mail" autocomplete="on">
+                    </label>
+                    <label>Website
+                        <input type="url" class="form-control col-md-9" name="website" autocomplete="on">
+                    </label>                
+                </div>
+                <div class="back">
+                    <label>Phone
+                        <input type="text" class="form-control col-md-9" name="phone" pattern="[0-9]{10}">
+                    </label>
+                    <label>Coffee
+                        <input type="number" class="form-control col-md-9" name="coffee">
+                    </label>                 
+                </div>
+                <div class="left">
+                    <label>Range &nbsp;
+                        <input type="range" class="custom-range col-md-9" min="50" max="100" name="temper">
+                    </label>
+                    <label>Address
+                        <textarea class="form-control col-md-6" rows="3" name="address">some text</textarea>
+                    </label>                   
+                </div>
+                <div class="bottom">
+                    <fieldset>
+                        <legend> Hobbies:</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="interests[]" value="GYM" id="check1">
+                            <label class="form-check-label" for="check1">GYM  
+                            </label>
+                            <input class="form-check-input" type="checkbox" name="interests[]" value="Coding-tutorials" id="check2">
+                            <label class="form-check-label" for="check2">Coding-tutorials
+                            </label>
+                        </div>
+                    </fieldset>               
+                    <input type="submit" value="Submit">  
+                </div>
+                <div class="top">
+                    <label>Gender<br>
+                        <input type="radio" name="gender" value="female"> Female <br>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>Age
+                        <select id="options" class="custom-select col-md-4" name="age">
+                            <option selected>Choose...</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                    </label>
+                                    
+                </div>
+                        
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="includes/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="includes/main.js"></script>
+</body>
+</html>
